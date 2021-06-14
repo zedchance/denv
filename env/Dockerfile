@@ -5,7 +5,7 @@ WORKDIR /
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && \
-    apt-get -y install vim git zsh curl clang libssl-dev && \
+    apt-get -y install vim git zsh curl && \
     apt-get clean
 
 ADD setup /
